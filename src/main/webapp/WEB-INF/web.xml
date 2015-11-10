@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	
+	<display-name>Rx Demo</display-name>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<listener>
+		<listener-class>fr.gop.demo.GuiceListener</listener-class>
+	</listener>
+
+	<servlet>
+		<description></description>
+		<display-name>DemoServlet</display-name>
+		<servlet-name>DemoServlet</servlet-name>
+		<servlet-class>fr.gop.demo.DemoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DemoServlet</servlet-name>
+		<url-pattern>/process</url-pattern>
+	</servlet-mapping>
+
+
+</web-app>
